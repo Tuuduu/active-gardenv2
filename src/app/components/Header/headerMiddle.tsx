@@ -7,7 +7,7 @@ export default function headerMiddle() {
         <a
           id={""}
           key={""}
-          className="cursor-pointer text-[#1f1f1f] hover:text-[#c19c2e] text-lg font-extralight leading-8 uppercase transition duration-300 ease-in-out"
+          className="cursor-pointer text-[#1f1f1f] hover:text-[#c19c2e] text-lg font-light leading-8 uppercase transition duration-300 ease-in-out"
         >
           {item?.name}
         </a>
