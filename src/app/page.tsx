@@ -1,8 +1,7 @@
 import Banner from './components/homePage/banner'
 import Advantage01 from './components/homePage/Advantage01'
 import ProjectsAbout from './components/homePage/ProjectsAbout'
-// import Image from 'next/image'
-// import backgroundImage from '@/images/homePage/background-1-1_yppyx6.png'
+import Around from './components/homePage/Around'
 
 export default function Home() {
   return (
@@ -10,6 +9,7 @@ export default function Home() {
       <Banner />
       <Advantage01 />
       <ProjectsAbout />
+      <Around />
     </main>
   )
 }

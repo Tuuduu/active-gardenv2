@@ -16,7 +16,7 @@ export default function ProjectsAbout() {
                 width={2000}
                 height={2000}
                 quality={100}
-                className="w-full h-screen absolute object-cover z-[-1]" />
+                className="w-full h-auto absolute object-cover z-[-1]" />
             <div
                 className="mb-5
              p-10">
