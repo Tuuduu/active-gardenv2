@@ -21,7 +21,11 @@ export default function banner() {
                         </p>
                         <div className='w-auto h-auto flex flex-row items-center space-x-5'>
                             <div className='w-[73px] h-[73px] flex items-center justify-center rounded-full bg-[#c09b2d] cursor-pointer'>
-                                <FontAwesomeIcon icon={faPlay} className='w-8 h-8 text-white' />
+                                <FontAwesomeIcon
+                                    icon={faPlay}
+                                    width={32}
+                                    height={32}
+                                    className='text-white' />
                             </div>
                             <h1 className='uppercase text-white text-lg'>Бичлэг үзэх</h1>
                         </div>

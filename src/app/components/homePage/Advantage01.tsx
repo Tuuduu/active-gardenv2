@@ -23,8 +23,7 @@ export default function Advantage02() {
       <div className="w-full flex flex-row space-x-8 transition-all">
         {temp01.map((item) => (
           <div
-            key={""}
-            id={""}
+            key={item.id}
             className={`${item?.style} group w-full flex flex-col space-y-5 items-center group-hover:scale-110 ease-in duration-300 justify-center py-10 cursor-pointer`}
           >
             <Image alt="" src={item?.image} width={64} height={64} />
@@ -43,26 +42,31 @@ export default function Advantage02() {
 
 const temp01 = [
   {
+    id: '1',
     image: logo02,
     title: "Active Education",
     style: "bg-[#373435]",
   },
   {
+    id: '2',
     image: logo01,
     title: "Active Complex",
     style: "bg-[#ffcc29]",
   },
   {
+    id: '3',
     image: logo05,
     title: "Active Zone",
     style: "bg-[#ed3237]",
   },
   {
+    id: '4',
     image: logo04,
     title: "Active Planning",
     style: "bg-[#63964b]",
   },
   {
+    id: '5',
     image: logo03,
     title: "Active Investment",
     style: "bg-[#0f69b2]",

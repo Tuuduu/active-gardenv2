@@ -38,7 +38,9 @@ export default function Around() {
                     className="w-full h-[380px] absolute object-cover z-[-1]" />
                 <div className='w-full flex flex-row p-10 space-x-10 border-b-2 border-gray-400'>
                     {temp01.map((item) => (
-                        <div className='p-10 border cursor-pointer group border-gray-200 bg-white w-full flex flex-col items-center justify-center space-y-5'>
+                        <div
+                            key={item.id}
+                            className='p-10 border cursor-pointer group border-gray-200 bg-white w-full flex flex-col items-center justify-center space-y-5'>
                             <FontAwesomeIcon icon={item?.logo} className='w-[80px] h-[80px] text-[#c19c2e]' />
                             <h1 className='group-hover:text-[#c19c2e] text-[20px]'>{item?.title}</h1>
                             <p className='group-hover:text-[#c19c2e] text-[13px]'>{item?.descripsion}</p>
@@ -53,16 +55,19 @@ export default function Around() {
 
 const temp01 = [
     {
+        id: '1',
         logo: faConnectdevelop,
         title: 'Борлуулалтын алба',
         descripsion: '7555 5500',
     },
     {
+        id: '2',
         logo: faCloudArrowDown,
         title: 'Танилцуулга татах',
         descripsion: 'Файл татах',
     },
     {
+        id: '3',
         logo: faEnvelope,
         title: 'Санал хүсэлт илгээх',
         descripsion: 'И-мэйл илгээх',

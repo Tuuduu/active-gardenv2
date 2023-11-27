@@ -1,22 +1,17 @@
 import React from "react";
 import Image from "next/image";
+import logo from "@/images/Header/active-newlogo-small_cpyfzs.png"
 
-export default function HeaderTop({
-  item,
-  className,
-}: {
-  item: any;
-  className: any;
-}) {
+export default function HeaderTop() {
   return (
     <div className="w-ful">
       <Image
-        src={item}
+        src={logo}
         alt="Active garden logo"
         width={180}
         height={220}
         quality={100}
-        className={className}
+        className={'object-cover w-[180px] h-auto cursor-pointer'}
       />
     </div>
   );

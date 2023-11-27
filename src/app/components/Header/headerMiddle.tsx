@@ -1,48 +1,64 @@
 import React from "react";
+import Link from "next/link";
+import { usePathname } from 'next/navigation'
 
 export default function headerMiddle() {
+
+  const pathname = usePathname()
+
   return (
-    <div className="flex flex-col">
+    <nav className="flex flex-col">
       {temp01.map((item) => (
-        <a
-          id={""}
-          key={""}
-          className="cursor-pointer text-[#1f1f1f] hover:text-[#c19c2e] text-lg font-light leading-8 uppercase transition duration-300 ease-in-out"
-        >
-          {item?.name}
-        </a>
+        <ul key={item.id}>
+          <li
+          >
+            <Link
+              href={item.link}
+              className={`${pathname === item.link ? 'text-[#c19c2e] font-semibold' : 'text-[#1f1f1f]'} cursor-pointer hover:text-[#c19c2e] text-lg font-light leading-8 uppercase transition duration-300 ease-in-out`}
+            >
+              {item?.name}
+            </Link>
+          </li>
+        </ul>
       ))}
-    </div>
+    </nav>
   );
 }
 
 const temp01 = [
   {
+    id: "1",
     name: "Танилцуулга",
-    link: "",
+    link: "/",
   },
   {
+    id: "2",
     name: "Төлөвлөлт",
-    link: "",
+    link: "/projector",
   },
   {
+    id: "3",
     name: "Материал хийц",
-    link: "",
+    link: "/material",
   },
   {
+    id: "4",
     name: "Өрөөний сонголт",
-    link: "",
+    link: "/rooms",
   },
   {
+    id: "5",
     name: "FAR Үзүүлэлт",
-    link: "",
+    link: "/far-indicator",
   },
   {
+    id: "6",
     name: "Мэдээ Мэдээлэл",
-    link: "",
+    link: "/blog",
   },
   {
+    id: "7",
     name: "Борлуулалтын алба",
-    link: "",
+    link: "/contact-us",
   },
 ];
