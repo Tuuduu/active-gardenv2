@@ -20,7 +20,9 @@ export default function ProjectorList() {
     return (
         <div className='w-full h-auto grid grid-cols-8 gap-10 p-10'>
             {temp01.map((item) => (
-                <div className='flex flex-col items-center space-y-3'>
+                <div
+                    key={item.id}
+                    className='flex flex-col items-center space-y-3'>
                     <Image alt='logo' src={item.image} height={64} width={64} quality={100} />
                     <h1 className='text-[12px] text-[#505050] text-center'>{item.title}</h1>
                 </div>
@@ -31,66 +33,82 @@ export default function ProjectorList() {
 
 const temp01 = [
     {
+        id: 1,
         image: logo01,
         title: "FAR-1.2 / БАРИЛГЫН НЯГТАРШИЛ БАГА"
     },
     {
+        id: 2,
         image: logo02,
         title: "СПОРТЛОГ ОРЧИН"
     },
     {
+        id: 3,
         image: logo03,
         title: "ХҮҮХДЭД ЭЭЛТЭЙ ОРЧИН"
     },
     {
+        id: 4,
         image: logo04,
         title: "ЧАНАРТАЙ БРЭНДИЙН ХЭРЭГСЭЛ"
     },
     {
+        id: 5,
         image: logo09,
         title: "БАРИЛГЫН ЧАНАР, ХИЙЦ"
     },
     {
+        id: 6,
         image: logo10,
         title: "НОГООН БАЙГУУЛАМЖ"
     },
     {
+        id: 7,
         image: logo11,
         title: "24 ЦАГИЙН ХАРУУЛ ХАМГААЛАЛТ"
     },
     {
+        id: 8,
         image: logo14,
         title: "ЗОГСООЛЫН ХҮРТЭЭМЖ САЙН"
     },
     {
+        id: 9,
         image: logo05,
         title: "24 ЦАГИЙН ХОС ЦАХИЛГААН ШАТ"
     },
     {
+        id: 10,
         image: logo06,
         title: "ГАЛЫН ДОХИОЛОЛ"
     },
     {
+        id: 11,
         image: logo07,
         title: "АГААРЫН ЧАНАРЫН ҮЗҮҮЛЭЛТ САЙН"
     },
     {
+        id: 12,
         image: logo08,
         title: "ДУНДЫН ОРОН ЗАЙ"
     },
     {
+        id: 13,
         image: logo13,
         title: "УЛСЫН СУРГУУЛЬ"
     },
     {
+        id: 14,
         image: logo13,
         title: "ЦЭЦЭРЛЭГ"
     },
     {
+        id: 15,
         image: logo12,
         title: "ХУДАЛДАА, ҮЙЛЧИЛГЭЭНИЙ ЦОГЦОЛБОР"
     },
     {
+        id: 16,
         image: logo16,
         title: "ТҮГЖРЭЛД ӨРТӨХГҮЙ ОРОХ, ГАРАХ ГАРЦУУДТАЙ"
     }
