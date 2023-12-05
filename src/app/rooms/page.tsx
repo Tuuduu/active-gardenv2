@@ -1,5 +1,5 @@
 import React from 'react'
-import Roomlist from '../components/Rooms/Roomlist'
+import Roomlist from '../components/RoomsPage/Roomlist'
 export default function rooms() {
   return (
     <div className='w-full p-10'>

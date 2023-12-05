@@ -15,12 +15,15 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "animejs": "^3.2.2",
     "antd": "^5.11.5",
     "babel-plugin-macros": "^3.1.0",
+    "lightbox.js-react": "^0.9.6",
     "next": "^14.0.4-canary.37",
+    "next-cloudinary": "^5.10.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-router-dom": "^6.20.0"
+    "react-images-viewer": "^1.7.1"
   },
   "devDependencies": {
     "@types/node": "^20",

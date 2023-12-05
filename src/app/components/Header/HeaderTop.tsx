@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logo from "@/images/Header/active-newlogo-small_cpyfzs.png"
+import logo from "@/images/HeaderImages/active-newlogo-small_cpyfzs.png"
 
 export default function HeaderTop() {
   return (
