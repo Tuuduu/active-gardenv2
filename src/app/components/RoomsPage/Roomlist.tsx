@@ -13,7 +13,10 @@ export default function Roomlist() {
     return (
         <div className='w-full flex flex-col space-y-16'>
             {temp01.map((item) => (
-                <div className='w-full flex flex-col'>
+                <div
+                    className='w-full flex flex-col'
+                    key={item?.id}
+                >
                     <div className='flex flex-row space-x-10'>
                         <div className="mb-6">
                             <h1 className="text-[20px] text-[#c19c2e] font-bold uppercase">{item?.roomType}</h1>
@@ -43,6 +46,7 @@ export default function Roomlist() {
                             <img
                                 className='object-cover bg-cover w-[500px] h-auto border border-gray-200'
                                 src={item}
+                                key={item}
                             />
                         ))
                         }
@@ -96,7 +100,7 @@ const temp01 = [
         ]
     },
     {
-        id: 2,
+        id: 4,
         roomType: "F,G ROOM",
         roomSize: "56.07мкв - 2 өрөө /2-7 давхарт/",
         rooms: [
@@ -109,7 +113,7 @@ const temp01 = [
         ]
     },
     {
-        id: 2,
+        id: 5,
         roomType: "H,I ROOM",
         roomSize: "64.92мкв - 3 өрөө /2-7 давхарт/",
         rooms: [
@@ -126,7 +130,7 @@ const temp01 = [
         ]
     },
     {
-        id: 2,
+        id: 6,
         roomType: "A ROOM",
         roomSize: "61.55мкв - 3 өрөө /8-15 давхарт/",
         rooms: [
@@ -139,7 +143,7 @@ const temp01 = [
         ]
     },
     {
-        id: 2,
+        id: 7,
         roomType: "B ROOM",
         roomSize: "65.40мкв - 3 өрөө /8-15 давхарт/",
         rooms: [
@@ -152,7 +156,7 @@ const temp01 = [
         ]
     },
     {
-        id: 2,
+        id: 8,
         roomType: "E,F ROOM",
         roomSize: "79.46мкв - 3 өрөө /8-16 давхарт/",
         rooms: [
@@ -168,7 +172,7 @@ const temp01 = [
         ]
     },
     {
-        id: 2,
+        id: 9,
         roomType: "G,H ROOM",
         roomSize: "92.82мкв - 4 өрөө /8-16 давхарт/",
         rooms: [
@@ -184,7 +188,7 @@ const temp01 = [
         ]
     },
     {
-        id: 2,
+        id: 10,
         roomType: "H ROOM",
         roomSize: "129.91мкв - 4 өрөө /16 давхарт/",
         rooms: [

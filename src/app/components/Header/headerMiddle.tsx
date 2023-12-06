@@ -1,5 +1,6 @@
+"use"
 import React from "react";
-import Link from "next/link";
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 export default function headerMiddle() {
@@ -13,7 +14,7 @@ export default function headerMiddle() {
           <li
           >
             <Link
-              href={item.link}
+              href={item?.link}
               className={`${pathname === item.link ? 'text-[#c19c2e] font-semibold' : 'text-[#1f1f1f]'} cursor-pointer hover:text-[#c19c2e] text-lg font-light leading-8 uppercase transition duration-300 ease-in-out`}
             >
               {item?.name}
