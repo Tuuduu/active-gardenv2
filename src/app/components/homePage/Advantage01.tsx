@@ -8,9 +8,9 @@ import logo05 from "@/images/homePage/AdvantageImage/active-zone-1-100x100.png"
 
 export default function Advantage02() {
   return (
-    <div className="w-full flex flex-col p-10">
-      <div className="mb-8">
-        <h1 className="text-[34px] font-[600] uppercase">Онцлог давуу тал</h1>
+    <div className="w-full flex flex-col lg:p-10 md:p-8 p-0">
+      <div className="mb-8 md:p-0 p-5">
+        <h1 className="lg:text-[34px] md:text-[22px] text-[20px] font-[600] uppercase">Онцлог давуу тал</h1>
         <h2 style={{
           content: '',
           display: 'block',
@@ -20,7 +20,7 @@ export default function Advantage02() {
           margin: '15px 0',
         }} > </h2>
       </div>
-      <div className="w-full flex flex-row space-x-8 transition-all">
+      <div className="w-full flex md:flex-row flex-col md:space-x-8 transition-all">
         {temp01.map((item) => (
           <div
             key={item.id}

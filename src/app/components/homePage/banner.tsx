@@ -8,7 +8,7 @@ export default function banner() {
     return (
         <div className='w-full h-screen overflow-hidden'>
             <div className='w-full h-full relative'>
-                <Image src={Banner} layout='fill' objectFit='cover' alt='banner' className='w-full h-full scale-125 top-0 left-0 absolute z-[-2]' quality={100} />
+                <Image src={Banner} layout='fill' objectFit='cover' alt='banner' className='w-full h-full md:scale-125 scale-100 top-0 left-0 absolute z-[-2]' quality={100} />
                 <div className='w-full h-full flex flex-row bg-black opacity-40 z-[-1] absolute top-0 left-0'>
                 </div>
                 <div className='w-full h-full flex flex-col items-center justify-center'>
@@ -16,18 +16,16 @@ export default function banner() {
 
                         <p style={{
                             textShadow: '3px 6px 2px rgba(0, 0, 0, 0.41)'
-                        }} className='text-white text-5xl leading-snug uppercase'>
+                        }} className='text-white md:text-5xl sm:text-3xl text-2xl leading-snug uppercase'>
                             Эрүүл, идэвхтэй амьдралыг дэмжигч ACTIVE GARDEN RESIDENCE
                         </p>
                         <div className='w-auto h-auto flex flex-row items-center space-x-5'>
-                            <div className='w-[73px] h-[73px] flex items-center justify-center rounded-full bg-[#c09b2d] cursor-pointer'>
+                            <div className='md:w-[73px] md:h-[73px] sm:w-[60px] sm:h-[60px] w-[45px] h-[45px] flex items-center justify-center rounded-full bg-[#c09b2d] cursor-pointer'>
                                 <FontAwesomeIcon
                                     icon={faPlay}
-                                    width={32}
-                                    height={32}
-                                    className='text-white' />
+                                    className='text-white md:w-4 w-[12px] h-auto' />
                             </div>
-                            <h1 className='uppercase text-white text-lg'>Бичлэг үзэх</h1>
+                            <h1 className='uppercase text-white md:text-lg text-md'>Бичлэг үзэх</h1>
                         </div>
                     </div>
                 </div>
