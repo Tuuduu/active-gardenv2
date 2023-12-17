@@ -19,7 +19,7 @@ export default function Roomlist() {
                 >
                     <div className='flex flex-row space-x-10'>
                         <div className="mb-6">
-                            <h1 className="text-[20px] text-[#c19c2e] font-bold uppercase">{item?.roomType}</h1>
+                            <h1 className="lg:text-[20px] text-[14px] text-[#c19c2e] font-bold uppercase">{item?.roomType}</h1>
                             <h2 style={{
                                 content: '',
                                 display: 'block',
@@ -30,7 +30,7 @@ export default function Roomlist() {
                             }} > </h2>
                         </div>
                         <div className="mb-6">
-                            <h1 className="text-[20px] text-[#534b40] uppercase">{item?.roomSize}</h1>
+                            <h1 className="lg:text-[20px] text-[14px] text-[#534b40] uppercase">{item?.roomSize}</h1>
                             <h2 style={{
                                 content: '',
                                 display: 'block',
@@ -41,7 +41,7 @@ export default function Roomlist() {
                             }} > </h2>
                         </div>
                     </div>
-                    <SlideshowLightbox className='container grid grid-cols-3 gap-2 mx-auto' showThumbnails={true} >
+                    <SlideshowLightbox className='container grid lg:grid-cols-3 grid-cols-2 gap-2 mx-auto' showThumbnails={true} >
                         {item.rooms.map((item) => (
                             <img
                                 className='object-cover bg-cover w-[500px] h-auto border border-gray-200'

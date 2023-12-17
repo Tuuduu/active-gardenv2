@@ -18,7 +18,7 @@ import logo16 from '@/images/projectorPage/list/16-100x100.png'
 
 export default function ProjectorList() {
     return (
-        <div className='w-full h-auto grid grid-cols-8 gap-10 p-10'>
+        <div className='w-full h-auto grid lg:grid-cols-8 md:grid-cols-4 grid-cols-3 gap-10 p-10'>
             {temp01.map((item) => (
                 <div
                     key={item.id}

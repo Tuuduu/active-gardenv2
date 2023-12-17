@@ -11,7 +11,7 @@ export default function Around() {
         <div className='w-full pt-5'>
 
             <div className="mb-8 px-10">
-                <h1 className="text-[34px] font-[600] uppercase">ОРЧНЫ ТОЙМ</h1>
+                <h1 className="lg:text-[34px] text-[22px] font-[600] uppercase">ОРЧНЫ ТОЙМ</h1>
                 <h2 style={{
                     content: '',
                     display: 'block',
@@ -36,14 +36,14 @@ export default function Around() {
                     height={200}
                     quality={100}
                     className="w-full h-[380px] absolute object-cover z-[-1]" />
-                <div className='w-full flex flex-row p-10 space-x-10 border-b-2 border-gray-400'>
+                <div className='w-full flex lg:flex-row flex-col p-10 lg:space-x-10 lg:space-y-0 space-y-10 border-b-2 border-gray-400'>
                     {temp01.map((item) => (
                         <div
                             key={item.id}
                             className='p-10 border cursor-pointer group border-gray-200 bg-white w-full flex flex-col items-center justify-center space-y-5'>
-                            <FontAwesomeIcon icon={item?.logo} className='w-[80px] h-[80px] text-[#c19c2e]' />
-                            <h1 className='group-hover:text-[#c19c2e] text-[20px]'>{item?.title}</h1>
-                            <p className='group-hover:text-[#c19c2e] text-[13px]'>{item?.descripsion}</p>
+                            <FontAwesomeIcon icon={item?.logo} className='lg:w-[80px] lg:h-[80px] w-[45px] h-[45px] text-[#c19c2e]' />
+                            <h1 className='group-hover:text-[#c19c2e] lg:text-[20px] text-[14px]'>{item?.title}</h1>
+                            <p className='group-hover:text-[#c19c2e] lg:text-[13px] text-[10px]'>{item?.descripsion}</p>
                         </div>
                     ))
                     }

@@ -20,7 +20,7 @@ export default function ProjectsAbout() {
             <div
                 className="mb-5
              p-10">
-                <h1 className="text-[34px] font-[600] uppercase">ТӨСЛИЙН ТУХАЙ</h1>
+                <h1 className="lg:text-[34px] text-[22px] font-[600] uppercase">ТӨСЛИЙН ТУХАЙ</h1>
                 <h2 style={{
                     content: '',
                     display: 'block',
@@ -34,15 +34,15 @@ export default function ProjectsAbout() {
                     style={{
                         boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
                     }}>
-                    <div>
+                    <div className='flex items-center'>
                         <Image src={logo01} alt='logo' width={100} height={100} quality={100} />
                     </div>
                     <div>
-                        <h1 className='text-[20px] font-[600] pb-2'>Байршил</h1>
-                        <p className='text-[15px]'>Улаанбаатар хотын шинэ суурьшлын бүс, Хан-Уул дүүрэг Яармагт байрлах эрүүл хөрс, цэнгэг агаар бүхий Богд уулын бэл, Туул голын хөвөөнд байрлалтай 5А CONCEPT бүхий эрүүл, идэвхтэй амьдралын хэв маягийг эрхэмлэсэн бизнес зэрэглэлийн 856 айлын орон сууц.</p>
+                        <h1 className='lg:text-[20px] text-[16px] font-[600] pb-2'>Байршил</h1>
+                        <p className='lg:text-[15px] text-[12px]'>Улаанбаатар хотын шинэ суурьшлын бүс, Хан-Уул дүүрэг Яармагт байрлах эрүүл хөрс, цэнгэг агаар бүхий Богд уулын бэл, Туул голын хөвөөнд байрлалтай 5А CONCEPT бүхий эрүүл, идэвхтэй амьдралын хэв маягийг эрхэмлэсэн бизнес зэрэглэлийн 856 айлын орон сууц.</p>
                     </div>
                 </div>
-                <div className='w-full flex flex-row space-x-8 py-8'>
+                <div className='w-full flex lg:flex-row flex-col lg:space-x-8 lg:space-y-0 space-y-8 py-8'>
                     <div
                         className='w-full flex flex-row space-x-5 bg-white p-10'
                         style={{
@@ -52,8 +52,8 @@ export default function ProjectsAbout() {
                             <Image src={logo03} alt='logo' width={70} height={70} quality={100} />
                         </div>
                         <div>
-                            <h1 className='text-[20px] font-[600] pb-2'>Төсөл хэрэгжих хугацаа</h1>
-                            <p className='text-[15px]'>1-р үе: 2 блок 2022 оны III улирал<br /><br />
+                            <h1 className='lg:text-[20px] text-[16px] font-[600] pb-2'>Төсөл хэрэгжих хугацаа</h1>
+                            <p className='lg:text-[15px] text-[12px]'>1-р үе: 2 блок 2022 оны III улирал<br /><br />
 
                                 2-р үе: 2 блок 2023 оны III улирал<br /><br />
 
@@ -69,8 +69,8 @@ export default function ProjectsAbout() {
                             <Image src={logo02} alt='logo' width={100} height={100} quality={100} />
                         </div>
                         <div>
-                            <h1 className='text-[20px] font-[600] pb-2'>Төлөвлөлт</h1>
-                            <p className='text-[15px]'>70% – Нийтийн эзэмшлийн талбай, ногоон байгууламж, спортын талбай, хүүхдэд зориулсан тоглоомын талбай, амралтын чөлөөт бүс<br /><br />
+                            <h1 className='lg:text-[20px] text-[16px] font-[600] pb-2'>Төлөвлөлт</h1>
+                            <p className='lg:text-[15px] text-[12px]'>70% – Нийтийн эзэмшлийн талбай, ногоон байгууламж, спортын талбай, хүүхдэд зориулсан тоглоомын талбай, амралтын чөлөөт бүс<br /><br />
 
                                 16% – Автомашины зам талбай, зогсоол<br /><br />
 
@@ -78,15 +78,16 @@ export default function ProjectsAbout() {
                         </div>
                     </div>
                 </div>
-                <div className='w-full flex justify-end'>
+                <div className='w-full flex lg:justify-end'>
                     <div
-                        className='w-1/4 flex flex-col space-x-5 bg-white p-10'
+                        className='lg:w-1/4 w-1/2 flex flex-col space-x-5 bg-white p-10'
                         style={{
                             boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
                         }}>
                         <div className='w-full flex flex-col'>
-                            <h1 className='text-[24px] font-[600] pb-2 w-1/2'>Төслийн хөгжүүлэгч</h1>
-                            <h2 className='w-full flex justify-end py-2 pb-5'
+                            <h1 className='lg:text-[24px] text-[18px] font-[600] pb-2 w-1/2'>Төслийн хөгжүүлэгч</h1>
+                            <h2
+                                className='w-full flex justify-end py-2 pb-5'
                                 style={{
                                     height: '1px',
                                     borderTop: '2px solid #ebebeb',

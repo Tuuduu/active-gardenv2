@@ -13,13 +13,13 @@ import image09 from '@/images/MaterialsPage/10-1-300x300.png'
 
 export default function MaterialList() {
     return (
-        <div className='w-full grid grid-cols-3 gap-10 px-10'>
+        <div className='w-full grid lg:grid-cols-3 grid-cols-2 gap-10 px-10'>
             {temp01.map((item) => (
                 <div
                     key={item.id}
                     className='flex flex-col space-y-2'>
                     <div className="">
-                        <h1 className="text-[34px] text-[#534b40] font-[700] uppercase">0{item.id}</h1>
+                        <h1 className="lg:text-[34px] text-[22px] text-[#534b40] font-[700] uppercase">0{item.id}</h1>
                         <h2 style={{
                             content: '',
                             display: 'block',
@@ -32,8 +32,8 @@ export default function MaterialList() {
                     <div className='w-full h-auto'>
                         <Image alt='materials image' src={item.image} width={290} height={290} quality={100} className='w-auto h-auto' />
                     </div>
-                    <h1 className='text-[18px] text-[#505050] font-bold'>{item.title}</h1>
-                    <p className='w-3/4 text-[18px] text-[#505050]'>{item.description}</p>
+                    <h1 className='lg:text-[18px] text-[14px] text-[#505050] font-bold'>{item.title}</h1>
+                    <p className='lg:w-3/4 w-full lg:text-[18px] text-[12px] text-[#505050]'>{item.description}</p>
                 </div>
             ))
 

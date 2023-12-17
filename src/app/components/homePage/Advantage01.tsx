@@ -20,14 +20,14 @@ export default function Advantage02() {
           margin: '15px 0',
         }} > </h2>
       </div>
-      <div className="w-full flex md:flex-row flex-col md:space-x-8 transition-all">
+      <div className="w-full flex lg:flex-row flex-col lg:space-x-8 transition-all">
         {temp01.map((item) => (
           <div
             key={item.id}
             className={`${item?.style} group w-full flex flex-col space-y-5 items-center group-hover:scale-110 ease-in duration-300 justify-center py-10 cursor-pointer`}
           >
             <Image alt="" src={item?.image} width={64} height={64} />
-            <h1 className="text-2xl text-white font-extrabold group-hover:text-[#c19c2e] ease-in duration-300">
+            <h1 className="2xl:text-2xl md:text-xl text-2xl text-white md:text-center font-extrabold group-hover:text-[#c19c2e] ease-in duration-300">
               {item?.title}
             </h1>
             <p className="text-white text-md group-hover:text-[#c19c2e] ease-in-out duration-300">

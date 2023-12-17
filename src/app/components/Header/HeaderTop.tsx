@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function HeaderTop() {
   return (
-    <div className="w-ful">
+    <div className="w-ful select-none">
       <Link href={'/'}>
         <Image
           src={logo}
@@ -13,7 +13,7 @@ export default function HeaderTop() {
           width={180}
           height={220}
           quality={100}
-          className={'object-cover xl:w-[180px] lg:w-[140px] w-16 h-auto cursor-pointer'}
+          className={'object-cover xl:w-[180px] lg:w-[140px] w-16 h-auto cursor-pointer select-none'}
         />
       </Link>
     </div>
