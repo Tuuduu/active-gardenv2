@@ -24,8 +24,7 @@
     "next": "^14.0.4-canary.37",
     "next-cloudinary": "^5.10.0",
     "react": "^18",
-    "react-dom": "^18",
-    "react-images-viewer": "^1.7.1"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20.10.3",
