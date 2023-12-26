@@ -49,14 +49,6 @@ export default function Roomlist() {
                                 src={item}
                                 key={item}
                             />
-                            // <Image
-                            //     className='object-cover bg-cover w-[500px] h-auto border border-gray-200'
-                            //     src={item}
-                            //     alt='ss'
-                            //     key={item}
-                            //     width={1000}
-                            //     height={1000}
-                            // />
                         ))
                         }
                     </SlideshowLightbox>
