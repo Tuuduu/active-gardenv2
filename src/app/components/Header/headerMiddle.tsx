@@ -1,11 +1,12 @@
-"use"
+'use client'
+
 import React from "react";
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-export default function headerMiddle() {
+export default function HeaderMiddle() {
 
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <nav className="flex flex-col xl:space-y-0 lg:space-y-2">
