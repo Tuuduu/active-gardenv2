@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { animated, useSpring } from '@react-spring/web'
 import HeaderMiddle from './HeaderMiddle'
 import HeaderBot from './HeaderBot'
-import HeaderTop from './HeaderTop'
 import Link from 'next/link'
 import sideLogo from '@/images/HeaderImages/active-newlogo-small_cpyfzs.png'
 
