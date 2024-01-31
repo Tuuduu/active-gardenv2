@@ -23,12 +23,15 @@ export default function ContactTextField() {
 
 const temp01 = [
     {
+        id: 1,
         title: "Нэр"
     },
     {
+        id: 2,
         title: "Имэйл хаяг"
     },
     {
+        id: 3,
         title: "Гарчиг"
     },
 ]
