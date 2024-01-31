@@ -74,7 +74,7 @@ export default function banner() {
                                     icon={faPlay}
                                     className='text-white md:w-4 w-[14px] h-auto transition duration-300 ease-in-out group-hover:rotate-1' />
                             </div>
-                            <h1 className='uppercase text-white md:text-lg text-md cursor-pointer transition duration-300 ease-in-out group-hover:font-semibold'>Бичлэг үзэх</h1>
+                            <h1 className='uppercase text-white md:text-lg text-md cursor-pointer transition duration-300 ease-in-out'>Бичлэг үзэх</h1>
                         </div>
                     </div>
                 </div>
