@@ -4,7 +4,7 @@ export default function ContactTextField() {
     return (
         <div className='w-full h-auto flex flex-col gap-y-5 p-5'>
             {temp01?.map((item) => (
-                <div>
+                <div key={item?.id}>
                     <h1 className='text-[18px] text-[#1F1F1F]'>{item?.title}</h1>
                     <input className='w-full h-10 border-b border-gray-200 text-gray-500 focus:border-[#C19C2E] focus:outline-0'></input>
                 </div>
