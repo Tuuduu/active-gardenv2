@@ -7,11 +7,18 @@ export default function HeaderMiddle() {
 
     const pathname = usePathname();
 
+    const cssStyle = {
+        hover: {
+            textShadow: '3px 4px 2px rgba(0, 0, 0, 0.41)',
+        }
+    }
+
     return (
         <nav className="flex flex-col xl:space-y-0 lg:space-y-2">
             {temp01.map((item) => (
                 <ul key={item.id}>
                     <li
+                        className="transition duration-300 ease-in-out hover:-translate-y-0.5"
                     >
                         <Link
                             href={item?.link}

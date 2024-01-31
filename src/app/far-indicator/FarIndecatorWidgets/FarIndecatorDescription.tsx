@@ -3,7 +3,7 @@ import React from 'react'
 export default function FarIndecatorDescription() {
     return (
         <div className='w-full h-auto p-14'>
-            <p className='text-lg text-gray-600'>
+            <p className='lg:text-lg text-md text-gray-600'>
                 FAR үзүүлэлт нь барилгын талбайн төлөвлөлтийг эдэлбэр газартай харьцуулан илэрхийлэх коэффициент бөгөөд оршин суугчдын ая тухтай байдал, дэд бүтцийн хүрэлцээ, хангамж, үр өгөөжтэй ирээдүйн үнэ цэнийг илэрхийлдэг үзүүлэлт юм.
                 <br />
                 <br />

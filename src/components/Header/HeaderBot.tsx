@@ -12,7 +12,7 @@ export default function HeaderBot() {
         >
           <FontAwesomeIcon
             icon={faSquareFacebook}
-            className="xl:w-6 lg:w-5 w-4 text-2xl h-auto cursor-pointer hover:text-[#c09b2d] text-[#3b5998] transition duration-300 ease-in-out select-none"
+            className="xl:w-6 lg:w-5 w-4 text-2xl h-auto cursor-pointer hover:text-[#c09b2d] text-[#3b5998] transition duration-300 ease-in-out select-none hover:-translate-y-0.5"
           />
         </a>
         <a
@@ -21,7 +21,7 @@ export default function HeaderBot() {
         >
           <FontAwesomeIcon
             icon={faInstagram}
-            className="xl:w-6 lg:w-5 w-4 h-auto cursor-pointer text-2xl hover:text-[#c09b2d] text-[#3f729b] transition duration-300 ease-in-out select-none"
+            className="xl:w-6 lg:w-5 w-4 h-auto cursor-pointer text-2xl hover:text-[#c09b2d] text-[#3f729b] transition duration-300 ease-in-out select-none hover:-translate-y-0.5"
           />
         </a>
         <a
@@ -30,12 +30,12 @@ export default function HeaderBot() {
           <FontAwesomeIcon
             icon={faYoutube}
             className="xl:w-8 lg:w-6 w-5 h-auto text-2xl cursor-pointer hover:text-[#c09b2d]
-         text-[#e52d27] transition duration-300 ease-in-out select-none"
+         text-[#e52d27] transition duration-300 ease-in-out select-none hover:-translate-y-0.5"
           />
         </a>
       </div>
       <h1 className="text-[#c09b2d] xl:text-[24px] lg:text-[18px] text-center font-semibold select-none">7555-5500</h1>
-      <p className="text-[#505050] xl:text-[13px] lg:text-[10px] text-[8px] select-none">© 2023 ACTIVE GARDEN</p>
+      <p className="text-[#505050] xl:text-[13px] lg:text-[10px] text-[8px] select-none">© 2024 ACTIVE GARDEN</p>
     </div>
   );
 }

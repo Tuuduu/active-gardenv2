@@ -6,7 +6,7 @@ export default function far() {
   return (
     <div className='w-full h-auto py-10'>
       <div className="mb-6 px-10">
-        <h1 className="text-[34px] font-[400] uppercase">FAR /Floor Area Ratio/</h1>
+        <h1 className="lg:text-[34px] text-[22px] font-[400] uppercase">FAR /Floor Area Ratio/</h1>
         <h2 style={{
           content: '',
           display: 'block',
