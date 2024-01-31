@@ -1,7 +1,7 @@
 import React from 'react'
-import FarIndecatorPageImage from '../components/FarIndecatorPage/FarIndecatorPageImage'
-import FarIndecatorDescription from '../components/FarIndecatorPage/FarIndecatorDescription'
-import FarIndecatorPageAnimation from '../components/FarIndecatorPage/FarIndecatorPageAnimation'
+import FarIndecatorPageImage from './FarIndecatorWidgets/FarIndecatorPageImage'
+import FarIndecatorDescription from './FarIndecatorWidgets/FarIndecatorDescription'
+import FarIndecatorPageAnimation from './FarIndecatorWidgets/FarIndecatorPageAnimation'
 export default function far() {
   return (
     <div className='w-full h-auto py-10'>

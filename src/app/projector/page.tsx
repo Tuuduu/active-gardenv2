@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import projectorImage from '@/images/projectorPage/city-planning-1920x1280.jpg'
-import ProjectorList from '../components/projectorPage/ProjectorList'
+import ProjectorList from './projectorWidgets/ProjectorList'
 
 
 export default function projector() {

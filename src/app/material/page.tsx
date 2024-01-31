@@ -1,5 +1,5 @@
 import React from 'react'
-import MaterialList from '../components/MaterialsPage/MaterialList'
+import MaterialList from './MaterialsWidgets/MaterialList'
 export default function material() {
   return (
     <div className='w-full h-auto py-10'>

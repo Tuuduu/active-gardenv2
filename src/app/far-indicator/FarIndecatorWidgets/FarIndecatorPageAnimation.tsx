@@ -38,10 +38,22 @@ export default function FarIndecatorPageAnimation() {
                     <h1 className='text-[18px] font-bold uppercase'>НЯГТАРШИЛ</h1>
                     <h1 className='text-[47px] font-bold uppercase'>БАГА</h1>
                 </div>
-                <div className='bg-red-200 flex'>
-                    <h1 className='text-[94px] font-bold text-[#C19C2E]'>
+                <div className='flex -translate-y-6 pl-4'>
+                    <h1 className='text-[94px] font-bold text-[#C19C2E] '>
                         1.2 FAR
                     </h1>
+                </div>
+            </div>
+            <div className='w-full flex flex-row'>
+                <div className='w-60'>
+                    <h1 className='text-black text-[29px] uppercase font-bold line-clamp-2'>ГАЗАР ХӨДЛӨЛТИЙН</h1>
+                </div>
+                <div className='text-[#C19C2E] text-[60px] font-bold pr-6'>
+                    8
+                </div>
+                <div className='w-64'>
+                    <h1
+                        className='flex  text-black text-[29px] uppercase font-bold line-clamp-2'>БАЛЛД ТЭСВЭРТЭЙ</h1>
                 </div>
             </div>
         </div>

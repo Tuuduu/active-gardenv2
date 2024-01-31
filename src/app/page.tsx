@@ -1,7 +1,7 @@
-import Banner from './components/homePage/banner'
-import Advantage01 from './components/homePage/Advantage01'
-import ProjectsAbout from './components/homePage/ProjectsAbout'
-import Around from './components/homePage/Around'
+import Banner from '../components/homeWidgets/banner'
+import Advantage01 from '../components/homeWidgets/Advantage01'
+import ProjectsAbout from '../components/homeWidgets/ProjectsAbout'
+import Around from '../components/homeWidgets/Around'
 
 export default function Home() {
   return (
