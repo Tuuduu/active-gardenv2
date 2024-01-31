@@ -1,7 +1,14 @@
 import React from 'react'
+import ContactImformation from './ContactImformation'
+import ContactTextField from './ContactTextField'
 
 export default function ContactField() {
     return (
-        <div>ContactField</div>
+        <div
+            className='w-5/6 h-5/6 p-10 shadow-xl rounded-sm bg-white flex flex-row gap-x-10'
+        >
+            <ContactImformation />
+            <ContactTextField />
+        </div>
     )
 }
