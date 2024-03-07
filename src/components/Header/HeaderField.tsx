@@ -27,6 +27,7 @@ export default function HeaderField() {
                 <HeaderTop />
                 {/* middle */}
                 <div className="lg:block hidden">
+                    <h1>Hello</h1>
                     <HeaderMiddle />
                 </div>
                 {/* bottom */}

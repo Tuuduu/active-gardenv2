@@ -33,6 +33,7 @@ export default function Advantage02() {
             <p className="text-white text-md group-hover:text-[#c19c2e] ease-in-out duration-300">
               Дэлгэрэнгүй
             </p>
+            <button>X</button>
           </div>
         ))}
       </div>
