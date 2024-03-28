@@ -5,6 +5,7 @@ import logo02 from "@/images/homePage/AdvantageImage/active-education-1-100x100.
 import logo03 from "@/images/homePage/AdvantageImage/active-investment-1-100x100.png"
 import logo04 from "@/images/homePage/AdvantageImage/active-planning-1-100x100.png"
 import logo05 from "@/images/homePage/AdvantageImage/active-zone-1-100x100.png"
+import Link from "next/link";
 
 export default function Advantage02() {
   return (
@@ -30,9 +31,9 @@ export default function Advantage02() {
             <h1 className="2xl:text-2xl md:text-xl text-2xl text-white md:text-center font-extrabold group-hover:text-[#c19c2e] ease-in duration-300">
               {item?.title}
             </h1>
-            <p className="text-white text-md group-hover:text-[#c19c2e] ease-in-out duration-300">
+            <Link href={item?.link} className="text-white text-md group-hover:text-[#c19c2e] ease-in-out duration-300">
               Дэлгэрэнгүй
-            </p>
+            </Link>
           </div>
         ))}
       </div>
@@ -43,30 +44,35 @@ export default function Advantage02() {
 const temp01 = [
   {
     id: '1',
+    link: "/active-education",
     image: logo02,
     title: "Active Education",
     style: "bg-[#373435]",
   },
   {
     id: '2',
+    link: "/active-complex",
     image: logo01,
     title: "Active Complex",
     style: "bg-[#ffcc29]",
   },
   {
     id: '3',
+    link: "/active-zone",
     image: logo05,
     title: "Active Zone",
     style: "bg-[#ed3237]",
   },
   {
     id: '4',
+    link: "/active-planning",
     image: logo04,
     title: "Active Planning",
     style: "bg-[#63964b]",
   },
   {
     id: '5',
+    link: "/active-investment",
     image: logo03,
     title: "Active Investment",
     style: "bg-[#0f69b2]",

@@ -62,7 +62,7 @@ const temp01 = [
     {
         id: "6",
         name: "Мэдээ Мэдээлэл",
-        link: "/blog",
+        link: "/active-education",
     },
     {
         id: "7",

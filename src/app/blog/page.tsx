@@ -14,9 +14,6 @@ export default function blog() {
 
   return (
     <div className='w-full h-screen flex items-center justify-center'>
-
-
-      abc
       <p>
         Current theme: {currentTheme}
       </p>
@@ -24,14 +21,8 @@ export default function blog() {
 
 
 
-
-
-
-
-
-
-
-      {/* <Image
+      {/* 
+      <Image
         alt='server error'
         src={fix}
         quality={100}

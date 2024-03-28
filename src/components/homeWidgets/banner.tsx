@@ -4,12 +4,17 @@ import Image from 'next/image'
 import Banner from '@/images/homePage/ActiveGarden01.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
+import VideoModal from '../VideoModal/VideoModal'
+import { useAppDispatch, useAppSelector } from '@/lib/hooks'
+import { toggleModal } from '@/lib/features/ModalSlice'
 
 export default function banner() {
 
+    const dispatch = useAppDispatch()
 
     return (
         <div className='w-full h-screen overflow-hidden'>
+            <VideoModal />
             <div className='w-full h-full relative'>
                 <Image src={Banner} layout='fill' objectFit='cover' alt='banner' className='w-full h-full md:scale-125 scale-100 top-0 left-0 absolute z-[-2]' quality={100} />
                 <div className='w-full h-full flex flex-row bg-black opacity-40 z-[-1] absolute top-0 left-0'>
@@ -24,7 +29,7 @@ export default function banner() {
                             Эрүүл, идэвхтэй амьдралыг дэмжигч ACTIVE GARDEN RESIDENCE
 
                         </p>
-                        <div className='group w-auto h-auto flex flex-row items-center space-x-5'>
+                        <div onClick={() => dispatch(toggleModal())} className='group w-auto h-auto flex flex-row items-center space-x-5'>
                             <div className='md:w-[73px] md:h-[73px] sm:w-[60px] sm:h-[60px] w-[45px] h-[45px] flex items-center justify-center rounded-full bg-[#c09b2d] cursor-pointer transition duration-300 ease-in-out hover:scale-110'>
                                 <FontAwesomeIcon
                                     icon={faPlay}
