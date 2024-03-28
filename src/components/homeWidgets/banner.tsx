@@ -1,14 +1,14 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import Banner from '@/images/homePage/ActiveGarden01.jpg'
+import BannerImage from '@/images/homePage/ActiveGarden01.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
 import VideoModal from '../VideoModal/VideoModal'
 import { useAppDispatch, useAppSelector } from '@/lib/hooks'
 import { toggleModal } from '@/lib/features/ModalSlice'
 
-export default function banner() {
+export default function Banner() {
 
     const dispatch = useAppDispatch()
 
@@ -16,7 +16,7 @@ export default function banner() {
         <div className='w-full h-screen overflow-hidden'>
             <VideoModal />
             <div className='w-full h-full relative'>
-                <Image src={Banner} layout='fill' objectFit='cover' alt='banner' className='w-full h-full md:scale-125 scale-100 top-0 left-0 absolute z-[-2]' quality={100} />
+                <Image src={BannerImage} layout='fill' objectFit='cover' alt='banner' className='w-full h-full md:scale-125 scale-100 top-0 left-0 absolute z-[-2]' quality={100} />
                 <div className='w-full h-full flex flex-row bg-black opacity-40 z-[-1] absolute top-0 left-0'>
                 </div>
                 <div className='w-full h-full flex flex-col items-center justify-center'>
