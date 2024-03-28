@@ -1,4 +1,4 @@
-import Banner from '@/components/homeWidgets//Banner'
+import Banner from '@/components/homeWidgets/Banner'
 import Advantage01 from '@/components/homeWidgets/Advantage01'
 import ProjectsAbout from '@/components/homeWidgets/ProjectsAbout'
 import Around from '@/components/homeWidgets/Around'
